@@ -1,1 +1,2 @@
-# shaurmu-h-chu
+# shaurmu-hachu
+Простенький сайт с использованием Jquerry

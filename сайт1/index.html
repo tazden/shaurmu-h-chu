@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ 
+  
+<head> 
+<meta charset="utf-8">
+<title>Тазтдинов Денис АЭ-21-03 Шаурма</title> 
+<link rel= 'stylesheet' type="text/css" href= 'style.css'></head>
+
+ 
+<body>
+	<header>
+		<img src='images/logo.png' id='logoimg'>
+		<h1>  Шаурма "Денисовская" </h1>
+		<h2> 89870411083 <br>denisbomba2003@gmail.com</h2>
+	</header>
+	<div id='menu'>
+		<a href='index.html'>Главная</a>
+		<a  id='1'>Наше меню </a>
+		<a id='2''>Прием на работу</a>
+		<a id='3'>Акции</a>
+	</div>
+	<div class="slider-container">
+  <div class="slider">
+    <div class="slider__item">
+      <img src="images/2.jpg" alt="">
+    </div>
+    <div class="slider__item">
+      <img src="images/3.jpg" alt="">     
+    </div>
+    <div class="slider__item">
+    	<img src="images/1.jpg" alt="">
+    </div>
+  </div>   
+</div>
+<script>window.jQuery || document.write('<script src="./lib/jquery-1.11.1.min.js"><\/script>')</script>
+
+<script src="./src/slider.js"></script>
+<script>
+$(".slider-container").ikSlider({
+  speed: 300
+});
+$(".slider-container").on('changeSlide.ikSlider', function (evt) { console.log(evt.currentSlide); });
+
+</script>
+	<div id='osnova'>
+		<form>
+		<h1 id='obr'>Связаться с нами <br></h1>		
+		<input type 'text' placeholder='Ваше Имя' class='forma'> <br>
+		<input type ='tel'placeholder='Номер телефона'  class='forma'><br> 
+		<button onclick='foo();' id='btn' >Отправить
+		</form>
+	</div>
+	
+	<div id='vidjets'>
+		<div>
+			<img src='images/calendar.png' id='foto' > <br>
+		</div>
+	
+		<div>
+			<img src='images/clock.png' id='foto'>
+		</div>
+		<div>
+			<img src='images/Money.png' id='foto'>
+		</div>
+	
+	</div>
+	<div id='podpis'>
+		
+		<div>
+			<h1 id='podpis1'>Мы открылись совсем недавно!</h1>
+		</div>
+		<div>
+			<h1 id='podpis1'>Время работы</h1>
+			<h2 id='podpis2'> ПОНЕДЕЛЬНИК-ПЯТНИЦА 9:00-21:30<br>СУББОТА,ВОСКРЕСЕНЬЕ- ВЫХОДНОЙ </h2>
+		</div>
+		<div>
+			<h1 id='podpis1'>Цена</h1>
+			<h2 id='podpis2'>Шаурма Президентская 150 рублей<br>Шаурма Греческая 200 рублей</h2>
+		</div>
+	
+</body>
+ 
+</html>
